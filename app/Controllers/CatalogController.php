@@ -1,8 +1,14 @@
 <?php
+
 namespace App\Controllers;
 
 class CatalogController {
+    
     public function index() {
-        echo "<h1>¡El Enrutador funciona! Esta será la vista principal con la grilla estilo Article.</h1>";
+        $pageTitle = "Catálogo de Sofás y Muebles Exclusivos";
+        
+        $viewPath = BASE_PATH . '/app/Views/catalog/index.php';
+        
+        require_once BASE_PATH . '/app/Views/layout.php';
     }
 }
