@@ -39,4 +39,14 @@ class Product {
             ]
         ];
     }
+
+    public function getByCode(string $code): ?array {
+        $products = $this->getAll();
+        foreach ($products as $product) {
+            if ($product['code'] === $code) {
+                return $product;
+            }
+        }
+        return null;
+    }
 }

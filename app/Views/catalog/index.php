@@ -23,13 +23,6 @@
                 <h3 class="product-name">
                     <a href="<?= URL_ROOT; ?>/producto/<?= $product['code']; ?>"><?= $product['name']; ?></a>
                 </h3>
-                
-                <!-- Swatches / Muestras de colores disponibles -->
-                <div class="product-swatches">
-                    <?php foreach ($product['colors'] as $color): ?>
-                        <span class="swatch" style="background-color: <?= $color; ?>;"></span>
-                    <?php endforeach; ?>
-                </div>
 
                 <a href="<?= $waLink; ?>" target="_blank" class="btn-whatsapp">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
