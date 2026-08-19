@@ -35,6 +35,7 @@
     <main class="main-content">
         <div class="container">
             <?php 
+                //var_dump($viewPath);
                 // Aquí se renderiza la vista solicitada (Catalog, Detail, etc.)
                 if (isset($viewPath) && file_exists($viewPath)) {
                     include $viewPath;
