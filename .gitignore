@@ -7,3 +7,4 @@ Thumbs.db
 # Subidas dinámicas de imágenes (para no llenar el repo de fotos pesadas)
 public/uploads/*
 !public/uploads/.gitkeep
+.env
