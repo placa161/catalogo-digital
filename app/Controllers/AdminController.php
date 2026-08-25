@@ -2,8 +2,13 @@
 namespace App\Controllers;
 
 use App\Models\Product;
+use App\Middleware\AuthMiddleware;
 
 class AdminController {
+    
+    public function __construct() {
+        AuthMiddleware::requireAdmin();
+    }
 
     public function index() {
         $productModel = new Product();
